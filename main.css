@@ -1,0 +1,348 @@
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+*:focus {
+    outline: 0;
+    outline: none;
+}
+
+body {
+    color: #3e3e3e;
+    font-family: 'Work Sans', thin;
+    font-size: 83%;
+    line-height: normal;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #0055FF;
+    font-family: 'Montserrat', bold;
+    font-weight: 700;
+    font-size: 5em;
+    margin-bottom: 5%;
+}
+
+h2 {
+    color: #0055FF;
+    font-family: 'Montserrat', bold;
+    font-weight: 700;
+    font-size: 4em;
+    margin-bottom: 1%;
+}
+
+h3 {
+    color: #595959;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 3em;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    text-align: left;
+    letter-spacing: 3px;
+}
+
+h4 {
+    color: #b5b5b5;
+    font-family: 'Work Sans';
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-top: 0%;
+    letter-spacing: 3px;
+}
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.wrapper {
+    width: 65vw;
+    margin-left: 15vw;
+}
+
+
+a{
+    color: #3988e2;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fc9797;
+    transition: .5s ease;
+}
+
+.flexbox-container {
+    /* margin-top: 3vh; */
+    width: 90vw;
+    /* TODO: MAKE THIS WIDTH RESPONSIVE PER SCREEN SIZE */
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    align-items: flex-start;
+    position: relative;
+}
+
+#about .horizontal-nav > .flexbox-container,
+#projects .horizontal-nav > .flexbox-container{
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 170px;
+
+    -webkit-flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+}
+
+.title {
+    height: auto;
+}
+
+#about {
+    background-image: url('https://i.imgur.com/lzSg9JW.jpg');
+    background-color: #f8f8f9;
+    margin-right: 10vw;
+}
+
+#about .wrapper {
+    margin-top: 7%;
+    bottom: 30vh;
+}
+
+#about .title {
+    font-size: 4.4em;
+    letter-spacing: 3px;
+}
+
+.content {
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 70%;
+}
+
+.arrow {
+    margin-left: 50%;
+    margin-top: 13%;
+}
+
+#projects {
+    height: auto;
+    min-height: 100vh;
+    /* padding-bottom: 18vh; */
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+#projects .title {
+    margin-bottom: 3%;
+}
+
+#projects .wrapper {
+    margin-left: 5vw;
+    margin-right: 2vw;
+    margin-bottom: 3vw;
+}
+
+#projects .wrapper a {
+    border-bottom: none;
+}
+
+.project-cover {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 3%
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff; /* white */
+}
+
+.projects-content:hover .overlay {
+    opacity: 0.95;
+}
+
+.text {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 35px;
+}
+
+.project-type {
+    color: #626264;
+    font-size: 19px;
+}
+
+.project-description {
+    margin-left: 3%;
+    width: 400px;
+    margin-bottom: 3%;
+}
+
+.project-content {
+    margin-top: 5%;
+    font-size: 15px;
+}
+
+/* experience */
+
+#experience {
+    background-image: url('https://i.imgur.com/lzSg9JW.jpg');
+}
+
+/* contact */
+
+#contact {
+    position: relative;
+    height: 31vh;
+    display: flex;
+    align-items: center;
+}
+
+#contacts-content {
+    margin-left: 45vw;
+    margin-top: 5.5vw;
+    text-align: center;
+}
+
+.contacts-flexbox > .flexbox-container {
+    width: 91%;
+}
+
+/* .left, .right {
+    display: inline-block;
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+    right: 6vw;
+} */
+
+.contacts-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.05em;
+    letter-spacing: 0.25pt;
+    text-transform: lowercase;
+}
+
+.contacts-subtitle {
+    font-size: 0.85em;
+    color: #575656;
+    font-weight: lighter;
+}
+
+.contacts-subtitle a {
+    width: fit-content;
+    color: #575656;
+    border-bottom: none;
+    font-weight: lighter;
+}
+
+.contacts-copyright {
+    width: fit-content;
+    color: #575656;
+    border-bottom: none;
+    font-weight: lighter;
+    margin-top: 9vw;
+}
+
+/* .contacts-flexbox {
+    width: 100vw;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    align-items: flex-start;
+
+    position: relative;
+} */
+
+.evenly-distributed-children {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* GENERAL STYLING */
+.hidden {
+    display: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.emphasize {
+    font-weight: 500;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+/* navigation bar */
+
+.horizontal-nav {
+    padding-right: 1%;
+}
+
+.horizontal-nav > .flexbox-container {
+    margin-left: 3%;
+    width: 100%;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.horizontal-nav li {
+    display: inline;
+    text-align: right;
+}
+
+.horizontal-nav .one,
+.horizontal-nav .two,
+.horizontal-nav .three,
+.horizontal-nav .four,
+.horizontal-nav .five {
+    width: fit-content;
+    margin-right: 2%;
+}
+
+.horizontal-nav a  {
+    line-height: 1.6em;
+}
